@@ -1,0 +1,61 @@
+root@comp3134-101070231:~# tcpdump -XX -i eth0 -c 5
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+16:41:58.550966 IP 162.243.188.66.12155 > comp3134-101070231.ssh: Flags [.], ack 1883590216, win 501, options [nop,nop,TS val 2156783306 ecr 3382264986], length 0
+        0x0000:  ca3a 0ba1 e336 fe00 0000 0101 0800 4500  .:...6........E.
+        0x0010:  0034 4a70 4000 3406 f047 a2f3 bc42 9fcb  .4Jp@.4..G...B..
+        0x0020:  0d0b 2f7b 0016 888a 2f61 7045 4e48 8010  ../{..../apENH..
+        0x0030:  01f5 4d25 0000 0101 080a 808d e6ca c999  ..M%............
+        0x0040:  449a                                     D.
+16:41:58.552930 IP comp3134-101070231.ssh > 162.243.188.66.12155: Flags [P.], seq 1:129, ack 0, win 502, options [nop,nop,TS val 3382264999 ecr 2156783306], length 128
+        0x0000:  fe00 0000 0101 ca3a 0ba1 e336 0800 4510  .......:...6..E.
+        0x0010:  00b4 9107 4000 4006 9d20 9fcb 0d0b a2f3  ....@.@.........
+        0x0020:  bc42 0016 2f7b 7045 4e48 888a 2f61 8018  .B../{pENH../a..
+        0x0030:  01f6 0cb3 0000 0101 080a c999 44a7 808d  ............D...
+        0x0040:  e6ca eaf7 04e6 5a8f 01fa 0f4a ae4c c90d  ......Z....J.L..
+        0x0050:  c80e 80be 87f8 73d5 b268 a6ef c1c8 aedf  ......s..h......
+        0x0060:  ef8f e0a4 9d12 c05e 04ed a8d2 66c7 7cfa  .......^....f.|.
+        0x0070:  fae3 d465 9b63 825c 6022 4fc7 6ce3 51a6  ...e.c.\`"O.l.Q.
+        0x0080:  be6c c128 bd57 736d ef65 8f7e cdb6 b752  .l.(.Wsm.e.~...R
+        0x0090:  3f2d 81f1 89dc e571 7f3d 558c de5c c47b  ?-.....q.=U..\.{
+        0x00a0:  750e e839 3cfc 98e3 e7f5 cafd dbbb dd77  u..9<..........w
+        0x00b0:  b548 0707 4466 3937 eafb c8ac 404c c924  .H..Df97....@L.$
+        0x00c0:  8716                                     ..
+16:41:58.553069 IP comp3134-101070231.ssh > 162.243.188.66.12155: Flags [P.], seq 129:193, ack 0, win 502, options [nop,nop,TS val 3382264999 ecr 2156783306], length 64
+        0x0000:  fe00 0000 0101 ca3a 0ba1 e336 0800 4510  .......:...6..E.
+        0x0010:  0074 9108 4000 4006 9d5f 9fcb 0d0b a2f3  .t..@.@.._......
+        0x0020:  bc42 0016 2f7b 7045 4ec8 888a 2f61 8018  .B../{pEN.../a..
+        0x0030:  01f6 0c73 0000 0101 080a c999 44a7 808d  ...s........D...
+        0x0040:  e6ca 67b5 3453 3df6 cdfb e275 80d6 9ff1  ..g.4S=....u....
+        0x0050:  3f68 0c2e fcd3 826f 2245 50cf d9ea cf95  ?h.....o"EP.....
+        0x0060:  034e 2067 0ac8 a059 7cf7 b105 5f5e 1647  .N.g...Y|..._^.G
+        0x0070:  7cf0 cb58 5a28 ea70 2c1b 7ad1 24f3 7e7e  |..XZ(.p,.z.$.~~
+        0x0080:  a2f1                                     ..
+16:41:58.553185 IP comp3134-101070231.ssh > 162.243.188.66.12155: Flags [P.], seq 193:321, ack 0, win 502, options [nop,nop,TS val 3382264999 ecr 2156783306], length 128
+        0x0000:  fe00 0000 0101 ca3a 0ba1 e336 0800 4510  .......:...6..E.
+        0x0010:  00b4 9109 4000 4006 9d1e 9fcb 0d0b a2f3  ....@.@.........
+        0x0020:  bc42 0016 2f7b 7045 4f08 888a 2f61 8018  .B../{pEO.../a..
+        0x0030:  01f6 0cb3 0000 0101 080a c999 44a7 808d  ............D...
+        0x0040:  e6ca b5ad 14b2 733a 2a4c ba4d aed1 630c  ......s:*L.M..c.
+        0x0050:  fc13 f868 57a2 c81b 9be4 951d da75 4707  ...hW........uG.
+        0x0060:  e4fb eb0a 9960 a086 3739 9897 5f7d 86aa  .....`..79.._}..
+        0x0070:  40b6 65dc e851 2afc 546d 8806 3286 5bbc  @.e..Q*.Tm..2.[.
+        0x0080:  c82d cb27 3e6d fb11 2550 bec5 7a18 0761  .-.'>m..%P..z..a
+        0x0090:  cd50 5154 979d 55b6 ff65 0393 f3a5 2861  .PQT..U..e....(a
+        0x00a0:  b994 881f 57af 41f1 c0c8 ef6b 6355 8a83  ....W.A....kcU..
+        0x00b0:  fb63 af17 d1b9 de4e cc8d 5031 d865 64f6  .c.....N..P1.ed.
+        0x00c0:  bcd5                                     ..
+16:41:58.553281 IP comp3134-101070231.ssh > 162.243.188.66.12155: Flags [P.], seq 321:385, ack 0, win 502, options [nop,nop,TS val 3382265000 ecr 2156783306], length 64
+        0x0000:  fe00 0000 0101 ca3a 0ba1 e336 0800 4510  .......:...6..E.
+        0x0010:  0074 910a 4000 4006 9d5d 9fcb 0d0b a2f3  .t..@.@..]......
+        0x0020:  bc42 0016 2f7b 7045 4f88 888a 2f61 8018  .B../{pEO.../a..
+        0x0030:  01f6 0c73 0000 0101 080a c999 44a8 808d  ...s........D...
+        0x0040:  e6ca 6f4e 3cac 8179 1ba5 da48 735b aa5f  ..oN<..y...Hs[._
+        0x0050:  1076 269c 0f4d 7607 58e3 9faf d8b2 18de  .v&..Mv.X.......
+        0x0060:  ab11 7059 73ac 918f 03a2 59bd c38e f0d8  ..pYs.....Y.....
+        0x0070:  3bbe 088d ff81 d5a1 4642 1355 61ce f809  ;.......FB.Ua...
+        0x0080:  9d1f                                     ..
+5 packets captured
+45 packets received by filter
+11 packets dropped by kernel
+root@comp3134-101070231:~# 
